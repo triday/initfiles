@@ -1,0 +1,28 @@
+{
+  "name": "initfiles",
+  "version": "1.0.0",
+  "description": "Create multiple files based on custom templates.",
+  "bin": {
+    "if": "src/entry.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/triday/initfiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/triday/initfiles/issues"
+  },
+  "homepage": "https://github.com/triday/initfiles#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "commander": "^2.20.0",
+    "logtick": "^1.0.0",
+    "tsharp": "^1.7.3"
+  }
+}
