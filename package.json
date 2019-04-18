@@ -1,9 +1,9 @@
 {
   "name": "initfiles",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Create multiple files based on custom templates.",
   "bin": {
-    "if": "src/entry.js"
+    "ifs": "src/entry.js"
   },
   "scripts": {
     "build": "tsc"

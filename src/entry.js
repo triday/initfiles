@@ -65,19 +65,19 @@ function handleItem(dataItem) {
     if (type === "append") {
         mkdirsSync(path.dirname(filename));
         fs.appendFileSync(filename, content, 'utf8');
-        log.info("Append file {0#blue} success!", filename);
+        log.info("Append file {0#blue} {1#green}!", filename, 'success');
     } else {
         check(!fs.existsSync(filename), String.format(FILE_EXISTS, filename));
         mkdirsSync(path.dirname(filename));
         fs.writeFileSync(filename, content, 'utf8');
-        log.info("Create file {0#blue} success!", filename);
+        log.info("Create file {0#blue} {1#green}!", filename, 'success');
     }
 }
 function mkdirsSync(dirname) {
     if (!fs.existsSync(dirname)) {
         mkdirsSync(path.dirname(dirname));
         fs.mkdirSync(dirname);
-        log.debug("Make dir [{0#blue}] success!", dirname);
+        log.info('Make dir {0#blue} {1#green}!', dirname, 'success');
     }
 }
 
@@ -87,5 +87,8 @@ program
     .option("-t, --template <template> [args...]", "template js file.")
     .on('--help', showHelp)
     .parse(process.argv);
-
-runTemplate(program.template, ...program.args);
+if (program.template) {
+    runTemplate(program.template, ...program.args);
+} else {
+    program.outputHelp(p=>p.toColorful("red"));
+}
