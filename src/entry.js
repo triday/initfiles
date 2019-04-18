@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 require("tsharp");
 var program = require("commander");
 var package = require("../package.json");
@@ -24,7 +25,7 @@ function showHelp() {
             {
                 name: \`src/pages/\${arg1}/index.js\`,
                 type: 'append',
-                content: '// this is append content'
+                content: '// this is append content\n'
             }
         ]
     }`;
