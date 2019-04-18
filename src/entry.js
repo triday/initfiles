@@ -25,7 +25,7 @@ function showHelp() {
             {
                 name: \`src/pages/\${arg1}/index.js\`,
                 type: 'append',
-                content: '// this is append content\n'
+                content: '// this is append content\\n'
             }
         ]
     }`;
