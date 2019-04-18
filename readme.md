@@ -24,6 +24,7 @@
     ```
 
     The js template file should return a object array, and the array item schame as below.
+    
     | propertyname | description | required | defaultvalue |
     | ------ | ------ | ------ | ------ |
     |name|the file name, it should be a relative file name and can contains folder path.|true| |
