@@ -1,16 +1,15 @@
 {
   "name": "initfiles",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create multiple files based on custom templates.",
   "bin": {
     "ifs": "src/entry.js"
   },
   "scripts": {
     "postversion": "git push && git push --tags",
-    "publish:patch":"npm version patch && npm publish",
-    "publish:minor":"npm version minor && npm publish",
-    "publish:major":"npm version major && npm publish"
-
+    "publish:patch": "npm version patch && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "publish:major": "npm version major && npm publish"
   },
   "repository": {
     "type": "git",
