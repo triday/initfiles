@@ -27,5 +27,8 @@
     "commander": "^2.20.0",
     "logtick": "^1.0.0",
     "tsharp": "^1.7.3"
-  }
+  },
+  "files": [
+    "src/entry.js"
+  ]
 }
