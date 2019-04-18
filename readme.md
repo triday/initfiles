@@ -2,7 +2,7 @@
 
 ```initfiles``` is a code generation tool for frontend project。
 
-
+![images](https://github.com/triday/initfiles/blob/master/images/demo_react.gif?raw=true)
 
 ### How to use
 
