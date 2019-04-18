@@ -1,8 +1,10 @@
-## initfiles
+## InitFiles
 
 ```initfiles``` is a code generation tool for frontend project。
 
-### How to Use
+
+
+### How to use
 
 1. ```npm install initfiles -D``` 
 2. Create a template file in your project. You can add the **javascript** template file in any folder. eg ```templates/react.js```.
@@ -31,5 +33,5 @@
     |content|the file content.|true| |
     |type|the file type, ['create' or 'append']. if 'create' then will crate a new file with content, if 'append' then will append the content to the file. |false|'create'|
 
-3. Then you can run the command  ```ifs -t templates/abc.js value1 value2```, in this case, your project root folder then will add two file ```src/pages/value1/value2.js```. 
+3. Then you can run the command  ```ifs -t templates/abc.js value1 value2```, in this case, your project root folder then will add two file ```src/pages/value1/value2.js``` and ```src/pages/value1/index.js```. 
 
