@@ -2,12 +2,12 @@
 
 ```initfiles``` is a code generation tool for frontend project。
 
-![images](https://github.com/triday/initfiles/blob/master/images/demo_react.gif?raw=true)
+![image](https://github.com/triday/initfiles/blob/master/images/demo_react.gif?raw=true)
 
 ### How to use
 
 1. ```npm install initfiles -D``` 
-2. Create a template file in your project. You can add the **javascript** template file in any folder. eg ```templates/react.js```.
+2. Create a template file in your project. You can add the **javascript** template file in any folder. eg ```templates/abc.js```.
 
     ```javascript
     module.exports = function (arg1, arg2) {
